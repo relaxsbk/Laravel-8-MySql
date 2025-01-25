@@ -9,7 +9,7 @@ class RegisterController extends Controller
 {
     public function index()
     {
-        dd('da');
+        return view('Register');
     }
 
     public function create()
