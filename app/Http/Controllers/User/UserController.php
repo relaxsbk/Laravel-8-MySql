@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     public function profile()
     {
-        dd('profile');
+        return view('User.Profile');
     }
 
     public function logout()

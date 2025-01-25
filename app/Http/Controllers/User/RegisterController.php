@@ -9,7 +9,7 @@ class RegisterController extends Controller
 {
     public function index()
     {
-        return view('Register');
+        return view('User.Register');
     }
 
     public function create()
