@@ -7,7 +7,7 @@
         <form class="w-50">
             <div class="mb-3">
                 <label for="InputName" class="form-label">Ваше ФИО</label>
-                <input name="fullName" type="text" class="form-control" id="InputName"  placeholder="Иван Иванов Иванович">
+                <input name="name" type="text" class="form-control" id="InputName"  placeholder="Иван Иванов Иванович">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
