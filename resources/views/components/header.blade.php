@@ -12,7 +12,18 @@
                     </li>
 
                 </ul>
-                <a class="nav-link" href="#">Вход</a>
+                <button
+                    style="background: none"
+                    class="border-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                >
+                    Вход
+                </button>
+{{--                <a href="" class="nav-link">Аккаунт</a>--}}
+
 {{--                <form class="d-flex" role="search">--}}
 {{--                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">--}}
 {{--                    <button class="btn btn-outline-success" type="submit">Поиск</button>--}}
@@ -21,3 +32,32 @@
         </div>
     </nav>
 </header>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Авторизация</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+        <form action="{{route('login')}}" method="post" class="mb-2">
+            @csrf
+            <div class="form-floating mb-3">
+                <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Электронная почта</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Пароль</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input name="remember" type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Войти</button>
+        </form>
+        <span class="text-center text-secondary">
+            Нет аккаунта? <a href="{{route('register')}}" class="text-decoration-none">Зарегистрироваться</a>
+        </span>
+    </div>
+</div>
