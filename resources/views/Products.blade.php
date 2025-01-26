@@ -18,29 +18,57 @@
                                 <h5 class="modal-title" id="exampleModalLabel">Добавление товара</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <form action="*" method="post">
+                            <form action="{{route('products.store')}}" method="post">
+                                @csrf
                                 <div class="modal-body">
                                     <div class="form-floating mb-3">
-                                        <input name="article" type="text" class="form-control" id="floatingInput" placeholder="">
+                                        <input name="article" value="{{old('article')}}" type="text" class="form-control @error('article') is-invalid @enderror" id="floatingInput" placeholder="">
                                         <label for="floatingInput">ARTICLE</label>
+                                        @error('article')
+                                            <div id="validationServer03Feedback" class="invalid-feedback">
+                                                {{$message}}
+                                            </div>
+                                        @enderror
+
                                     </div>
+
                                     <div class="form-floating mb-3">
-                                        <input name="name" type="text" class="form-control" id="floatingInput" placeholder="Пылесос">
+                                        <input name="name" value="{{old('name')}}" type="text" class="form-control @error('name') is-invalid @enderror" id="floatingInput" placeholder="Пылесос">
                                         <label for="floatingInput">NAME</label>
+                                          @error('name')
+                                            <div id="validationServer03Feedback" class="invalid-feedback">
+                                                {{$message}}
+                                            </div>
+                                        @enderror
                                     </div>
 
                                     <span class="mb-3">Характеристики: </span>
                                     <div class="form-floating mt-3 mb-3">
-                                        <input name="article" type="text" class="form-control" id="floatingInput" placeholder="">
+                                        <input name="data[color]" value="{{old('data[color]')}}" type="text" class="form-control @error('data[color]') is-invalid @enderror" id="floatingInput" placeholder="">
                                         <label for="floatingInput">Color</label>
+                                          @error('data[color]')
+                                            <div id="validationServer03Feedback" class="invalid-feedback">
+                                                {{$message}}
+                                            </div>
+                                        @enderror
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input name="name" type="text" class="form-control" id="floatingInput" placeholder="Пылесос">
+                                        <input name="data[size]" value="{{old('data[size]')}}" type="text" class="form-control @error('data[size]') is-invalid @enderror" id="floatingInput" placeholder="Пылесос">
                                         <label for="floatingInput">Size</label>
+                                          @error('data[size]')
+                                            <div id="validationServer03Feedback" class="invalid-feedback">
+                                                {{$message}}
+                                            </div>
+                                        @enderror
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input name="name" type="text" class="form-control" id="floatingInput" placeholder="Пылесос">
+                                        <input name="data[material]" value="{{old('data[material]')}}" type="text" class="form-control @error('data[material]') is-invalid @enderror" id="floatingInput" placeholder="Пылесос">
                                         <label for="floatingInput">Material</label>
+                                          @error('data[material]')
+                                            <div id="validationServer03Feedback" class="invalid-feedback">
+                                                {{$message}}
+                                            </div>
+                                        @enderror
                                     </div>
                                     <div class="mb-3 form-check">
                                         <input name="publish" type="checkbox" class="form-check-input" id="publish">
@@ -48,7 +76,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">Добавить</button>
+                                    <button type="submit" class="btn btn-primary">Добавить</button>
                                 </div>
                             </form>
                         </div>

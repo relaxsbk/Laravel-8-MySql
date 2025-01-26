@@ -4,18 +4,6 @@
 
 @section('main')
 
-    @if(session()->has('success'))
-        <div class="alert alert-success container" role="alert">
-            {{session()->get('success')}}
-        </div>
-    @endif
-
-    @if(session()->has('invalid'))
-        <div class="alert alert-danger container" role="alert">
-            {{session()->get('invalid')}}
-        </div>
-    @endif
-
 
     <section class="container d-flex gap-5 justify-content-between flex-wrap">
         @foreach($products as $product)

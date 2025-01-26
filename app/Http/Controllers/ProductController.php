@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Product\StoreProductRequest;
+use App\Http\Requests\Product\UpdateProductRequest;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -16,15 +18,12 @@ class ProductController extends Controller
     }
 
 
-    public function create()
+    public function store(StoreProductRequest $request)
     {
-        //
-    }
+        $validated = $request->validated();
+        $product = Product::query()->create($validated);
 
-
-    public function store(Request $request)
-    {
-        //
+        return redirect()->route('products.show', ['product' => $product->id])->with('success', 'Продукт создан успешно');
     }
 
 
@@ -34,20 +33,20 @@ class ProductController extends Controller
     }
 
 
-    public function edit($id)
+    public function update(UpdateProductRequest $request, Product $product)
     {
-        //
-    }
+        $product->update($request->validated());
 
-
-    public function update(Request $request, $id)
-    {
-        //
+        return redirect()->back()->with(['success' => 'Успешное обновление продукта']);
     }
 
 
     public function destroy($id)
     {
-        //
+        $product = Product::query()->findOrFail($id);
+
+        $product->delete();
+
+        return redirect()->route('products.index')->with(['success' => 'Успешное удаление']);
     }
 }

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5e1d12-4c69-4c44-a976-f16229d37e1f" name="Changes" comment="вывод товаров с пагинацией &#10;вывод одного товара">
-      <change afterPath="$PROJECT_DIR$/routes/groups/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    <list default="true" id="9d5e1d12-4c69-4c44-a976-f16229d37e1f" name="Changes" comment="вынесены маршруты &#10;правка мелочей">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/main.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +191,7 @@
       <workItem from="1737742959836" duration="279000" />
       <workItem from="1737743268319" duration="1035000" />
       <workItem from="1737906832609" duration="1075000" />
-      <workItem from="1737916703147" duration="2537000" />
+      <workItem from="1737916703147" duration="6649000" />
     </task>
     <task id="LOCAL-00001" summary="Регистрация авторизация и выход&#10;разграничение прав на отображение элементов&#10;проверка на адмиина в модели">
       <option name="closed" value="true" />
@@ -221,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737919154706</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="вынесены маршруты &#10;правка мелочей">
+      <option name="closed" value="true" />
+      <created>1737919590235</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737919590235</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +245,7 @@
     <MESSAGE value="добавлены реквесты( к прошлому комиту)" />
     <MESSAGE value="скоуп метод&#10;вывод данных на главную страницу&#10;вывод в шаблоне" />
     <MESSAGE value="вывод товаров с пагинацией &#10;вывод одного товара" />
-    <option name="LAST_COMMIT_MESSAGE" value="вывод товаров с пагинацией &#10;вывод одного товара" />
+    <MESSAGE value="вынесены маршруты &#10;правка мелочей" />
+    <option name="LAST_COMMIT_MESSAGE" value="вынесены маршруты &#10;правка мелочей" />
   </component>
 </project>

@@ -12,6 +12,20 @@
 
     @include('components.header')
 
+
+        @if(session()->has('success'))
+            <div class="alert alert-success container mt-5" role="alert">
+                {{session()->get('success')}}
+            </div>
+        @endif
+
+        @if(session()->has('invalid'))
+            <div class="alert alert-danger container mt-5" role="alert">
+                {{session()->get('invalid')}}
+            </div>
+        @endif
+
+
     <main class="flex-grow-1 mt-5 mb-5">
         @yield('main')
     </main>
