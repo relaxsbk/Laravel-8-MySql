@@ -20,7 +20,7 @@ Route::group(['middleware' => 'guest'], function () {
     Route::post('/login', [LoginController::class, 'login'])->name('login');
 });
 
-Route::group(['middleware' => 'guest'], function () {
+Route::group(['middleware' => 'auth'], function () {
     Route::get('/profile',[UserController::class, 'profile'])->name('profile');
     Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 });

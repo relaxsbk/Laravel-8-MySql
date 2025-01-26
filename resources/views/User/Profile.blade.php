@@ -11,7 +11,8 @@
                 <h5 class="card-title mb-3">Name</h5>
                 <h5 class="card-title mb-3">email</h5>
                 <h5 class="card-title mb-3">дата регистрации</h5>
-                <form action="*" method="post">
+                <form action="{{route('logout')}}" method="post">
+                    @csrf
                     <button class="btn btn-outline-danger" type="submit">Выход</button>
                 </form>
 

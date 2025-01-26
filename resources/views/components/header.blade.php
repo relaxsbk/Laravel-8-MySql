@@ -12,22 +12,20 @@
                     </li>
 
                 </ul>
-                <button
-                    style="background: none"
-                    class="border-0"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"
-                >
-                    Вход
-                </button>
-{{--                <a href="" class="nav-link">Аккаунт</a>--}}
-
-{{--                <form class="d-flex" role="search">--}}
-{{--                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">--}}
-{{--                    <button class="btn btn-outline-success" type="submit">Поиск</button>--}}
-{{--                </form>--}}
+                @if(auth()->guest())
+                    <button
+                        style="background: none"
+                        class="border-0"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"
+                    >
+                        Вход
+                    </button>
+                @else
+                    <a href="{{route('profile')}}" class="nav-link">Аккаунт</a>
+                @endif
             </div>
         </div>
     </nav>
