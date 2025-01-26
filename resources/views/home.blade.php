@@ -18,30 +18,13 @@
 
 
     <section class="container d-flex gap-5 justify-content-between flex-wrap">
-
-        <div class="card" style="width: 18rem;">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">NAME</h5>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">NAME</h5>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">NAME</h5>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">NAME</h5>
-            </div>
-        </div>
+        @foreach($products as $product)
+            <a href="{{route('product')}}" class="card text-decoration-none" style="width: 18rem;">
+                <img src="https://placehold.co/600x400" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">{{$product->name}}</h5>
+                </div>
+            </a>
+        @endforeach
     </section>
 @endsection

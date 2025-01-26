@@ -14,4 +14,9 @@ class Product extends Model
     ];
 
     protected $casts = ['data' => 'array'];
+
+    public function scopeAvailable($query)
+    {
+        return $query->where('status', 'available');
+    }
 }
