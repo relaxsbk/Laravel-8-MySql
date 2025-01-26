@@ -9,8 +9,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-//Пока что обращение без БД (опять заглушка)
-Route::get('/products/product', [ProductController::class, 'show'])->name('product');
 
 Route::resource('/products', ProductController::class);
 

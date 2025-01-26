@@ -11,12 +11,18 @@
 
         <div class="card" style="width: 35rem;">
             <div class="card-body">
-                <h5 class="card-title">Name</h5>
-                <ul>
-                    <li>Color - black</li>
-                    <li>Color - black</li>
-                    <li>Color - black</li>
-                </ul>
+                <h5 class="card-title">{{$product->article}} - <span class="text-secondary">article</span></h5>
+                <h5 class="card-title">{{$product->name}} - <span class="text-secondary">name</span></h5>
+                @if($product->data)
+                    <ul>
+                        <li>Color - black</li>
+                        <li>Color - black</li>
+                        <li>Color - black</li>
+                    </ul>
+                @else
+                    <p class="text-secondary mt-3"> Характеристики скоро будут</p>
+                @endif
+
                 @if(auth()->check() && auth()->user()->isAdmin())
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">

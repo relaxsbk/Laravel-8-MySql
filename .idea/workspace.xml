@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5e1d12-4c69-4c44-a976-f16229d37e1f" name="Changes" comment="добавлены реквесты( к прошлому комиту)">
+    <list default="true" id="9d5e1d12-4c69-4c44-a976-f16229d37e1f" name="Changes" comment="скоуп метод&#10;вывод данных на главную страницу&#10;вывод в шаблоне">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +190,7 @@
       <workItem from="1737742959836" duration="279000" />
       <workItem from="1737743268319" duration="1035000" />
       <workItem from="1737906832609" duration="1075000" />
-      <workItem from="1737916703147" duration="308000" />
+      <workItem from="1737916703147" duration="2155000" />
     </task>
     <task id="LOCAL-00001" summary="Регистрация авторизация и выход&#10;разграничение прав на отображение элементов&#10;проверка на адмиина в модели">
       <option name="closed" value="true" />
@@ -207,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737885444060</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="скоуп метод&#10;вывод данных на главную страницу&#10;вывод в шаблоне">
+      <option name="closed" value="true" />
+      <created>1737917166699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737917166699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +226,7 @@
     <MESSAGE value="Будет удаление папки" />
     <MESSAGE value="Регистрация авторизация и выход&#10;разграничение прав на отображение элементов&#10;проверка на адмиина в модели" />
     <MESSAGE value="добавлены реквесты( к прошлому комиту)" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлены реквесты( к прошлому комиту)" />
+    <MESSAGE value="скоуп метод&#10;вывод данных на главную страницу&#10;вывод в шаблоне" />
+    <option name="LAST_COMMIT_MESSAGE" value="скоуп метод&#10;вывод данных на главную страницу&#10;вывод в шаблоне" />
   </component>
 </project>
