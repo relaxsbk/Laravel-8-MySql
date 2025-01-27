@@ -16,7 +16,8 @@ class MiniProductResource extends JsonResource
     {
         return [
             'article' => $this->article,
-            'name' => $this->name
+            'name' => $this->name,
+            'image' => $this->mainImage->path,
         ];
     }
 }

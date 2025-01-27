@@ -19,4 +19,14 @@ class Product extends Model
     {
         return $query->where('status', 'available');
     }
+
+    public function images(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Image::class);
+    }
+
+    public function mainImage(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(Image::class)->where('position', 0);
+    }
 }

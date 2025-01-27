@@ -8,7 +8,12 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $products = Product::query()->available()->take(4)->get();
+        $products = Product::query()
+            ->available()
+            ->with('mainImage')
+            ->take(4)
+            ->get();
+
 
         return view('home', compact('products'));
     }

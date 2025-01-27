@@ -6,7 +6,7 @@
     <section class="container d-flex gap-5 justify-content-between flex-wrap">
 
         <div>
-            <img src="https://placehold.co/600x400" alt="img">
+            <img src="{{$product->mainImage->path}}" alt="img">
         </div>
 
         <div class="card" style="width: 35rem;">
