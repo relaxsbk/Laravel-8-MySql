@@ -23,12 +23,20 @@ class ProductController extends Controller
         $validated = $request->validated();
         $product = Product::query()->create($validated);
 
+        $product->images()->create([
+            'path' => 'https://placehold.co/600x400',
+            'position' => 0,
+        ]);
+
         return redirect()->route('products.show', ['product' => $product->id])->with('success', 'Продукт создан успешно');
     }
 
 
     public function show(Product $product)
     {
+        $product = $product->load('mainImage');
+
+
         return view('Product', compact('product'));
     }
 

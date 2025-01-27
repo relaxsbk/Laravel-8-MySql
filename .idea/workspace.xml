@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5e1d12-4c69-4c44-a976-f16229d37e1f" name="Changes" comment="сделан вывод json через api">
+    <list default="true" id="9d5e1d12-4c69-4c44-a976-f16229d37e1f" name="Changes" comment="Модель Image&#10;Сделана фабрика и добавлен сид&#10;в модели описаны отношения + метод по выборке&#10;изменён вывод картинки в монолите и api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Product/MiniProductResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Product/MiniProductResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/User/Profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/Profile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +191,7 @@
       <workItem from="1737743268319" duration="1035000" />
       <workItem from="1737906832609" duration="1075000" />
       <workItem from="1737916703147" duration="8310000" />
-      <workItem from="1737962904185" duration="1567000" />
+      <workItem from="1737962904185" duration="3108000" />
     </task>
     <task id="LOCAL-00001" summary="Регистрация авторизация и выход&#10;разграничение прав на отображение элементов&#10;проверка на адмиина в модели">
       <option name="closed" value="true" />
@@ -250,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737925097851</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Модель Image&#10;Сделана фабрика и добавлен сид&#10;в модели описаны отношения + метод по выборке&#10;изменён вывод картинки в монолите и api">
+      <option name="closed" value="true" />
+      <created>1737964780648</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737964780648</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +272,7 @@
     <MESSAGE value="вынесены маршруты &#10;правка мелочей" />
     <MESSAGE value="доделан CRUD на продукты&#10;подправлены формы" />
     <MESSAGE value="сделан вывод json через api" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделан вывод json через api" />
+    <MESSAGE value="Модель Image&#10;Сделана фабрика и добавлен сид&#10;в модели описаны отношения + метод по выборке&#10;изменён вывод картинки в монолите и api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Модель Image&#10;Сделана фабрика и добавлен сид&#10;в модели описаны отношения + метод по выборке&#10;изменён вывод картинки в монолите и api" />
   </component>
 </project>

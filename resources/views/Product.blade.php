@@ -5,15 +5,22 @@
 @section('main')
     <section class="container d-flex gap-5 justify-content-between flex-wrap">
 
-        <div>
-            <img src="{{$product->mainImage->path}}" alt="img">
-        </div>
+        @if($product->mainImage)
+            <div>
+                <img src="{{$product->mainImage->path}}" alt="img">
+            </div>
+        @else
+            <div style="width: 600px; height: 400px;">
+                Тут должна быть картинка
+            </div>
+        @endif
+
 
         <div class="card" style="width: 35rem;">
             <div class="card-body">
                 <h5 class="card-title">{{$product->article}} - <span class="text-secondary">article</span></h5>
                 <h5 class="card-title">{{$product->name}} - <span class="text-secondary">name</span></h5>
-                @if($product->data)
+                @if($product->data !== null)
                     <p class="text-secondary "> Характеристика:</p>
                     <ul>
                         @foreach($product->data as $data => $key)
