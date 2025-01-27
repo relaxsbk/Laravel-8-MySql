@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5e1d12-4c69-4c44-a976-f16229d37e1f" name="Changes" comment="Модель Image&#10;Сделана фабрика и добавлен сид&#10;в модели описаны отношения + метод по выборке&#10;изменён вывод картинки в монолите и api">
+    <list default="true" id="9d5e1d12-4c69-4c44-a976-f16229d37e1f" name="Changes" comment="Сделано мягкое удаление записи&#10;сделан дефолтное добавление картинки при добавлении записи&#10;404 страница">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/User/Profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/Profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +191,8 @@
       <workItem from="1737743268319" duration="1035000" />
       <workItem from="1737906832609" duration="1075000" />
       <workItem from="1737916703147" duration="8310000" />
-      <workItem from="1737962904185" duration="3108000" />
+      <workItem from="1737962904185" duration="15928000" />
+      <workItem from="1737984975733" duration="6558000" />
     </task>
     <task id="LOCAL-00001" summary="Регистрация авторизация и выход&#10;разграничение прав на отображение элементов&#10;проверка на адмиина в модели">
       <option name="closed" value="true" />
@@ -257,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737964780648</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Сделано мягкое удаление записи&#10;сделан дефолтное добавление картинки при добавлении записи&#10;404 страница">
+      <option name="closed" value="true" />
+      <created>1737966297343</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737966297343</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +282,7 @@
     <MESSAGE value="доделан CRUD на продукты&#10;подправлены формы" />
     <MESSAGE value="сделан вывод json через api" />
     <MESSAGE value="Модель Image&#10;Сделана фабрика и добавлен сид&#10;в модели описаны отношения + метод по выборке&#10;изменён вывод картинки в монолите и api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Модель Image&#10;Сделана фабрика и добавлен сид&#10;в модели описаны отношения + метод по выборке&#10;изменён вывод картинки в монолите и api" />
+    <MESSAGE value="Сделано мягкое удаление записи&#10;сделан дефолтное добавление картинки при добавлении записи&#10;404 страница" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделано мягкое удаление записи&#10;сделан дефолтное добавление картинки при добавлении записи&#10;404 страница" />
   </component>
 </project>

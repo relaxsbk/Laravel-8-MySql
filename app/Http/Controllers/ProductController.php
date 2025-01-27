@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\Product\StoreProductRequest;
 use App\Http\Requests\Product\UpdateProductRequest;
+use App\Jobs\CreatedProductToEmailJob;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -27,6 +28,8 @@ class ProductController extends Controller
             'path' => 'https://placehold.co/600x400',
             'position' => 0,
         ]);
+
+        dispatch(new CreatedProductToEmailJob($product, config('products.email')));
 
         return redirect()->route('products.show', ['product' => $product->id])->with('success', 'Продукт создан успешно');
     }
