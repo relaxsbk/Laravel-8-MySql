@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5e1d12-4c69-4c44-a976-f16229d37e1f" name="Changes" comment="Сделано мягкое удаление записи&#10;сделан дефолтное добавление картинки при добавлении записи&#10;404 страница">
+    <list default="true" id="9d5e1d12-4c69-4c44-a976-f16229d37e1f" name="Changes" comment="README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +190,8 @@
       <workItem from="1737906832609" duration="1075000" />
       <workItem from="1737916703147" duration="8310000" />
       <workItem from="1737962904185" duration="15928000" />
-      <workItem from="1737984975733" duration="6558000" />
+      <workItem from="1737984975733" duration="6781000" />
+      <workItem from="1738047641615" duration="1985000" />
     </task>
     <task id="LOCAL-00001" summary="Регистрация авторизация и выход&#10;разграничение прав на отображение элементов&#10;проверка на адмиина в модели">
       <option name="closed" value="true" />
@@ -266,7 +265,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737966297343</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Сделана job event listener notification &#10;отправка на почту своего шаблона&#10;так же оставил логи пусть будут">
+      <option name="closed" value="true" />
+      <created>1737991700443</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1737991700443</updated>
+    </task>
+    <task id="LOCAL-00011" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1737991771142</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1737991771142</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +298,8 @@
     <MESSAGE value="сделан вывод json через api" />
     <MESSAGE value="Модель Image&#10;Сделана фабрика и добавлен сид&#10;в модели описаны отношения + метод по выборке&#10;изменён вывод картинки в монолите и api" />
     <MESSAGE value="Сделано мягкое удаление записи&#10;сделан дефолтное добавление картинки при добавлении записи&#10;404 страница" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделано мягкое удаление записи&#10;сделан дефолтное добавление картинки при добавлении записи&#10;404 страница" />
+    <MESSAGE value="Сделана job event listener notification &#10;отправка на почту своего шаблона&#10;так же оставил логи пусть будут" />
+    <MESSAGE value="README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
   </component>
 </project>
