@@ -23,3 +23,8 @@ php artisan schedule:work
 ```bash
 php artisan queue:work
 ```
+
+### Api маршрут выглядит так:
+```
+local/api/vi/products
+```
