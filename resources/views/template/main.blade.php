@@ -25,6 +25,13 @@
             </div>
         @endif
 
+         @if(session()->has('errors'))
+            <div class="alert alert-danger container mt-5" role="alert">
+                Исправьте ошибки формы
+            </div>
+        @endif
+
+
 
     <main class="flex-grow-1 mt-5 mb-5">
         @yield('main')
