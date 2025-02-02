@@ -10,14 +10,18 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function __construct()
+    protected Product $product;
+
+    public function __construct(Product $product)
     {
         $this->middleware(['auth.admin', 'auth'])->except(['index', 'show']);
+
+        $this->product = $product;
     }
 
     public function index()
     {
-        $products = Product::query()->available()->paginate(8);
+        $products = $this->product->query()->available()->paginate(8);
 
         return view('Products', compact('products'));
     }
@@ -26,7 +30,7 @@ class ProductController extends Controller
     public function store(StoreProductRequest $request)
     {
         $validated = $request->validated();
-        $product = Product::query()->create($validated);
+        $product = $this->product->query()->create($validated);
 
         $product->images()->create([
             'path' => 'https://placehold.co/600x400',
@@ -58,7 +62,7 @@ class ProductController extends Controller
 
     public function destroy($id)
     {
-        $product = Product::query()->findOrFail($id);
+        $product = $this->product->query()->findOrFail($id);
 
         $product->delete();
 

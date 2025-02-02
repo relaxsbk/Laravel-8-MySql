@@ -10,6 +10,13 @@ use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
+    protected User $user;
+
+    public function __construct(User $user)
+    {
+        $this->user = $user;
+    }
+
     public function index()
     {
         return view('User.Register');
@@ -20,7 +27,7 @@ class RegisterController extends Controller
         $validated = $request->validated();
         $validated['password'] = Hash::make($validated['password']);
 
-        User::query()->create($validated);
+        $this->user->query()->create($validated);
 
         return redirect()->route('home')->with(['success' => 'Успешная регистрация']);
     }
